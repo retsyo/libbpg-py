@@ -1,16 +1,16 @@
 
                     Copyright (c) 2014 Lee June
 
-=1. What
+#1. What
 
 This is a pure python binding via CTYPES for BPG (Better Portable Graphics,
 http://bellard.org/bpg/, Fabrice Bellard)  Image format.
 
-=2. Where
+#2. Where
 
-https://github.com/retsyo/BPG_python
+https://github.com/retsyo/libbpg-py
 
-=3. How
+#3. How
 
 1) You should compile libbpg into dynamic library. To do so, a minor modified
 Makefile ( the original one is in libbpg-0.9.4.tar.gz from http://bellard.org/bpg/)
@@ -22,7 +22,7 @@ however bpgdec.c can write both PPM and PNG.
 There is no bpgenc.py till now.
 
 
-=4. Bugs or future plans
+#4. Bugs or future plans
 
 1) I only use Windows, and this binding uses 32-bit bpg.dll, which is compiled
 with MINGW. I don't know whether all python source files runs ok on Linux with
@@ -32,7 +32,7 @@ your fresh dynamic library.
 
 3) Maybe later, a PIL/Pillow plugin for I/O BPG
 
-=5. Bug in BPG?
+#5. Bug in BPG?
 
 D:\tmp\libbpg-0.9.4\py>..\bpgenc.exe -o test.bpg -lossless test.png
 D:\tmp\libbpg-0.9.4\py>..\bpgdec.exe -o test_c_bpgdec.ppm test.bpg
@@ -41,6 +41,6 @@ However, the original test.bpg and the decoded ppm has different looks. The ppm 
 red color in it.
 Is this a BPG bug, or I misunderstood '-lossless' parameter?
 
-=6. Licensing
+#6. Licensing
 
 BSD license
