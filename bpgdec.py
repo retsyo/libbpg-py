@@ -51,7 +51,7 @@ def ppm_save(img, filename):
     rgb_line=create_string_buffer(sizeof(c_uint8)*(3*w))
     #print dir(rgb_line)
 
-    f = open(filename,"w");
+    f = open(filename,"wb");
     '''
     if (!f) {
         fprintf(stderr, "%s: I/O error\n", filename);
